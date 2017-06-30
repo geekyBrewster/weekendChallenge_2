@@ -10,10 +10,10 @@ Once the server receives it, build out logic to compute the numbers in 1 of 4 di
 
 Finally, build a 'clear' button that resets the whole experience.
 
-**__HARD MODE:__**
+__HARD MODE:__**
 
 Convert the input fields for the two values to Buttons. So the experience would allow the user to click on a numerical button, then a mathematical operation, then a numerical button again. Then have an equal button that sends all of the information to the server.
 
-**__PRO MODE:__**
+__PRO MODE:__**
 
 Create a delay from when the client receives the response from the Server, and when the calculation is actually displayed on the DOM. The delay should be 3 seconds. During that delay, show information that says 'computing' until the 3 second delay has finished, then remove the 'computing' message while showing the calculation.
