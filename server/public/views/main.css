@@ -2,3 +2,12 @@ body {
   background-color: mintCream;
   color: teal;
 }
+
+span, input, button {
+  font-size: 1.3em;
+  margin: 5px 5px;
+}
+
+button:hover {
+  background-color: lightPink;
+}
