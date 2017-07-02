@@ -3,11 +3,39 @@ body {
   color: teal;
 }
 
-span, input, button {
+span, input {
   font-size: 1.3em;
   margin: 5px 5px;
 }
 
+button {
+  background: #34d997;
+  background-image: -webkit-linear-gradient(top, #34d997, #91dea9);
+  background-image: -moz-linear-gradient(top, #34d997, #91dea9);
+  background-image: -ms-linear-gradient(top, #34d997, #91dea9);
+  background-image: -o-linear-gradient(top, #34d997, #91dea9);
+  background-image: linear-gradient(to bottom, #34d997, #91dea9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Georgia;
+  color: #0c2dcf;
+  font-size: 14px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
 button:hover {
-  background-color: lightPink;
+  background: #afdcf7;
+  background-image: -webkit-linear-gradient(top, #afdcf7, #81b1d1);
+  background-image: -moz-linear-gradient(top, #afdcf7, #81b1d1);
+  background-image: -ms-linear-gradient(top, #afdcf7, #81b1d1);
+  background-image: -o-linear-gradient(top, #afdcf7, #81b1d1);
+  background-image: linear-gradient(to bottom, #afdcf7, #81b1d1);
+  text-decoration: none;
+}
+
+#result {
+  font-size: 2.0em;
+  color: blue;
 }
