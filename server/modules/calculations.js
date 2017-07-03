@@ -1,5 +1,5 @@
 function calculation(num1, num2, type){
-  var result = 0;
+  var result;
 
   switch (type) {
     case 'add':
@@ -21,6 +21,7 @@ function calculation(num1, num2, type){
     case 'reset':
       console.log("Clearing data");
   }
+  console.log("Returning: " + result);
   return result;
 }
 module.exports = calculation;

@@ -8,20 +8,37 @@ var calculation = require("./modules/calculations.js");
 
 // Receive data from the client
 app.post("/calculate", function(req, res){
-  // Retrieve data from client and set up variables
+  // Retrieve data from client -- now arrays of numbers and operators
   var mathData = req.body;
-    // console.log("Server has received: " + mathData);
-  var num1 = parseInt(mathData.number1);
-  var num2 = parseInt(mathData.number2);
-  var operator = mathData.type;
+  var numbers = mathData.numberArray;
+  var operators = mathData.operatorArray;
+  var num1 = 0;
+  var num2 = 0;
   var result;
-    // console.log(num1 + num2 + operator);
+    console.log("Server has received: " + numbers);
+    console.log("Server has received: " + operators);
 
-  // Do the Math
-  result = calculation(num1, num2, operator);
-  console.log(result);
+// For loops to step through the numbers and operators array to do math
+// numbers = [12,45,65,10] & operators = ['add', 'add', 'subtract']
+  for(var i = 0; i < numbers.length; i++){
+    if(i === 0){
+      num1 = parseInt(numbers[i]);  //[0] = 12
+      num2 = parseInt(numbers[i + 1]);  //[1] = 45
+      operator = operators[i];  // first add
+      result = calculation(num1, num2, operator);
+      i +=1;
+      console.log(result);
+    } else {
+      num1 = result;  //37
+      num2 = parseInt(numbers[i]);
+      operator = operators[i - 1];
+      result = calculation(num1, num2, operator);
+      console.log(result);
+    }
+  }
 
   // Send result back to client
+  console.log("The answer is: " + result);
   theResult = {answer: result};
   res.send(theResult);
 });

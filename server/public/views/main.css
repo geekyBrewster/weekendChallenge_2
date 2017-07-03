@@ -8,6 +8,10 @@ span, input {
   margin: 5px 5px;
 }
 
+div {
+  padding: 10px 10px;
+}
+
 button {
   background: #34d997;
   background-image: -webkit-linear-gradient(top, #34d997, #91dea9);
@@ -19,15 +23,16 @@ button {
   -moz-border-radius: 28;
   border-radius: 28px;
   font-family: Georgia;
-  color: #0c2dcf;
-  font-size: 14px;
+  color: teal;
+  font-size: 18px;
   padding: 10px 20px 10px 20px;
+  margin: 5px 5px;
   text-decoration: none;
 }
 
 button:hover {
-  background: #afdcf7;
-  background-image: -webkit-linear-gradient(top, #afdcf7, #81b1d1);
+  background: cyan;
+  background-image: -webkit-linear-gradient(top, cyan, #81b1d1);
   background-image: -moz-linear-gradient(top, #afdcf7, #81b1d1);
   background-image: -ms-linear-gradient(top, #afdcf7, #81b1d1);
   background-image: -o-linear-gradient(top, #afdcf7, #81b1d1);
@@ -35,7 +40,40 @@ button:hover {
   text-decoration: none;
 }
 
-#result {
+button:focus {
+  ouline: 0;
+}
+
+.container {
+  background-color: darkCyan;
+  max-width: 600px;
+  height: 300px;
+}
+#numbersBox {
+  max-width: 300px;
+  float: left;
+}
+#numbersBox button {
+  font-size: 1.8em;
+}
+#operators {
+  max-width: 200px;
+  float: left;
+}
+#numberEntry {
+  display: inline-block;
+  font-size: 1.0em;
+}
+#resultBox {
+  max-width: 600px;
+  background-color: darkCyan;
+  color: lightCyan;
+}
+#answer {
   font-size: 2.0em;
-  color: blue;
+  color: cyan;
+  width: 100px;
+}
+#reset-btn{
+  float: right;
 }

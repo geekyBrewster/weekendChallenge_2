@@ -10,17 +10,31 @@
   </head>
   <body>
     <h1>Super Awesome Calculator</h1>
-    <!-- Initial set up: input  input  + button  - button  * button  / button
-          Result = (  ) -->
+    <div id="resultBox">
+      <span>Answer: </span><span id="answer"> 0 </span> &nbsp
+            <span id="numberEntry"></span>
+      <button id="reset-btn" type="button">Reset</button>
+    </div>
     <div class="container">
-      <span>Enter number 1: </span><input id="number1" type="number" value="0"><br />
-      <span>Enter number 2: </span><input id="number2" type="number" value="0"><br />
-      <button id="add" type="button">Add</button>
-      <button id="subtract" type="button">Subtract</button>
-      <button id="multiply" type="button">Multiply</button>
-      <button id="divide" type="button">Divide</button><br />
-      <span>Result: </span><span id="result">0</span><br />
-      <button id="reset" type="button">Reset</button>
+      <div id="numbersBox">
+        <button type="button">1</button>
+        <button type="button">2</button>
+        <button type="button">3</button>
+        <button type="button">4</button>
+        <button type="button">5</button>
+        <button type="button">6</button>
+        <button type="button">7</button>
+        <button type="button">8</button>
+        <button type="button">9</button>
+        <button type="button">0</button>
+        <button id="submit" type="button"> = </button>
+      </div>
+      <div id="operators">
+        <button id="add" type="button">Add</button>
+        <button id="subtract" type="button">Subtract</button>
+        <button id="multiply" type="button">Multiply</button>
+        <button id="divide" type="button">Divide</button>
+      </div>
     </div>
 
   </body>

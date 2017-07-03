@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="views/main.css">
+    <!-- <link rel="stylesheet" href="views/main.css"> -->
+    <script src="vendors/jquery.js" charset="utf-8"></script>
+    <script src="scripts/client.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <h1>Super Awesome Calculator</h1>
+    <!-- Initial set up: input  input  + button  - button  * button  / button
+          Result = (  ) -->
+    <div class="container">
+      <span>Enter number 1: </span><input id="number1" type="number" value="0"><br />
+      <span>Enter number 2: </span><input id="number2" type="number" value="0"><br />
+      <button id="add" type="button">Add</button>
+      <button id="subtract" type="button">Subtract</button>
+      <button id="multiply" type="button">Multiply</button>
+      <button id="divide" type="button">Divide</button><br />
+      <span>Result: </span><span id="result">0</span><br />
+      <button id="reset" type="button">Reset</button>
+    </div>
+
+  </body>
+</html>
