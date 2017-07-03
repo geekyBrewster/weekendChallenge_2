@@ -1,5 +1,4 @@
 console.log("JS up and Atom!");
-var numCounter = 1;
 var hitEqualSign = false;
 var singleNumber = [];
 var userNumbers = [];
@@ -31,8 +30,7 @@ if(hitEqualSign !== true){
       var type = $(this).text().toLowerCase();
       userOperators.push(type);
         console.log("Math operators: " + userOperators);
-    // Stop receiving numbers for singleNumber & push that # into userNumbers array
-      var dataName = "number" + numCounter;
+    // Stop receiving numbers for singleNumber & push it into userNumbers array
       currentNumber = singleNumber.join('');
       userNumbers.push(currentNumber);
       singleNumber = [];
@@ -46,7 +44,6 @@ $('#submit').on('click', function(){
   hitEqualSign = true;
 
   // Push last number to userNumbers array
-  var dataName = "number" + numCounter;
   currentNumber = singleNumber.join('');
   userNumbers.push(currentNumber);
   singleNumber = [];
@@ -73,7 +70,7 @@ $('#submit').on('click', function(){
       var result = response.answer;
       console.log(result);
       // Display the result for the user
-      $('#result').text(result);
+      $('#answer').text(result);
     }
   });
 }); // end of equals click function

@@ -69,6 +69,10 @@ button:focus {
   background-color: darkCyan;
   color: lightCyan;
 }
+#resultBox div {
+  width: 150px;
+  display: inline;
+}
 #answer {
   font-size: 2.0em;
   color: cyan;
