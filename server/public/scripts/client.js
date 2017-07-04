@@ -26,16 +26,16 @@ if(hitEqualSign !== true){
   });
   //get mathmatical operator
   $('#operators').on('click', 'button', function(){
-    // Receive mathmatical operator from the corresponding button
-      var type = $(this).text().toLowerCase();
-      userOperators.push(type);
-        console.log("Math operators: " + userOperators);
-    // Stop receiving numbers for singleNumber & push it into userNumbers array
-      currentNumber = singleNumber.join('');
-      userNumbers.push(currentNumber);
-      singleNumber = [];
-      $('#numberEntry').text('');
-        console.log("math data: " + userNumbers);
+      // Receive mathmatical operator from the corresponding button
+        var type = $(this).text().toLowerCase();
+        userOperators.push(type);
+          console.log("Math operators: " + userOperators);
+      // Stop receiving numbers for singleNumber & push it into userNumbers array
+        currentNumber = singleNumber.join('');
+        userNumbers.push(currentNumber);
+        singleNumber = [];
+        $('#numberEntry').text('');
+          console.log("math data: " + userNumbers);
   });
 } //End of if loop that looks for hitEqualSign != true
 
@@ -75,7 +75,7 @@ $('#submit').on('click', function(){
         console.log(result);
         // Display the result for the user
         $('#answer').text(result);
-      }, 3000);  
+      }, 3000);
     }
   });
 
@@ -91,7 +91,6 @@ function reset(){
     $('#numberEntry').text("");
     $('#inputBox').show();
     $('#answerBox').hide();
-    numCounter = 1;
     hitEqualSign = false;
     singleNumber = [];
     userNumbers = [];
