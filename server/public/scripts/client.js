@@ -42,6 +42,8 @@ if(hitEqualSign !== true){
 // User clicks the equals button
 $('#submit').on('click', function(){
   hitEqualSign = true;
+  $('#inputBox').hide();
+  $('#answerBox').show();
 
   // Push last number to userNumbers array
   currentNumber = singleNumber.join('');
@@ -83,6 +85,8 @@ function reset(){
   $("#reset-btn").on('click', function(){
     $('#answer').text("");
     $('#numberEntry').text("");
+    $('#inputBox').show();
+    $('#answerBox').hide();
     numCounter = 1;
     hitEqualSign = false;
     singleNumber = [];
