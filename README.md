@@ -20,10 +20,10 @@ __HARD MODE:__
 - [x] Construct data object to send to the server
 - [x] Use existing calculation function to find the answer
 - [x] Display the answer on the DOM
-- [ ] Prevent multiple operators from entering array
+- [ ] Prevent user from clicking multiple math operations (all of which enter array currently)
 
 __PRO MODE:__
-- [ ] Create a delay from when the client receives the response from the Server, and when the calculation is actually displayed on the DOM.
-- [ ] The delay should be 3 seconds.
-- [ ] During that delay, show information that says 'computing' until the 3 second delay has finished
-- [ ] then remove the 'computing' message while showing the calculation.
+- [x] Create a delay from when the client receives the response from the Server, and when the calculation is actually displayed on the DOM.
+- [x] The delay should be 3 seconds.
+- [x] During that delay, show information that says 'computing' until the 3 second delay has finished
+- [x] then remove the 'computing' message while showing the calculation.

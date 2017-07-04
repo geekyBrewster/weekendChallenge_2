@@ -54,7 +54,7 @@ $('#submit').on('click', function(){
 
   // Build data object out of numbers and operators arrays
   // Sever will step through the arrays to do the math
-  console.log("You've pressed equals. Ready for an answer?");
+  // console.log("You've pressed equals. Ready for an answer?");
   mathData = {
     numberArray: userNumbers,
     operatorArray: userOperators
@@ -69,12 +69,16 @@ $('#submit').on('click', function(){
       console.log("Result received.");
       // Successful AJAX response:
       // Receive the result from the server
-      var result = response.answer;
-      console.log(result);
-      // Display the result for the user
-      $('#answer').text(result);
+      $('#answer').text("Calculating...");
+      setTimeout(function(){
+        var result = response.answer;
+        console.log(result);
+        // Display the result for the user
+        $('#answer').text(result);
+      }, 3000);  
     }
   });
+
 }); // end of equals click function
 
 reset();
