@@ -15,11 +15,12 @@ Basic Tasks:
 - [x] Finally, build a 'clear' button that resets the whole experience.
 
 __HARD MODE:__
-- [ ] Convert input fields to Buttons 1-9
-- [ ] Build an equal button that sends all of the information to the server.
-- [ ] Construct data object to send to the server
-- [ ] Use existing calculation function to find the answer
-- [ ] Display the answer on the DOM
+- [x] Convert input fields to Buttons 1-9
+- [x] Build an equal button that sends all of the information to the server.
+- [x] Construct data object to send to the server
+- [x] Use existing calculation function to find the answer
+- [x] Display the answer on the DOM
+- [ ] Prevent multiple operators from entering array
 
 __PRO MODE:__
 - [ ] Create a delay from when the client receives the response from the Server, and when the calculation is actually displayed on the DOM.
